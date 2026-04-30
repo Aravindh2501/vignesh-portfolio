@@ -1,0 +1,12 @@
+node_modules/
+.env
+assets/**/*.jpg
+assets/**/*.jpeg
+assets/**/*.png
+assets/**/*.webp
+assets/**/*.tif
+assets/**/*.tiff
+assets/**/*.nef
+assets/**/*.cr2
+assets/**/*.arw
+*.log
