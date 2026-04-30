@@ -8,7 +8,14 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Middleware
-app.use(cors({ origin: process.env.FRONTEND_URL || "http://localhost:3000" }));
+app.use(cors({
+  origin: [
+    process.env.FRONTEND_URL,
+    "https://vignesh-portfolio-beige-psi.vercel.app",
+    "https://vignesh-portfolio-git-main-muthus-projects-42d3c257.vercel.app",
+    "http://localhost:3000"
+  ]
+}));
 app.use(express.json());
 
 // Routes
